@@ -1,0 +1,93 @@
+/* Login Page Styles */
+
+/* Fullscreen container with gradient background */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+/* Card layout */
+.card {
+  background-color: #fff;
+  padding: 50px 40px;
+  border-radius: 25px;
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* Title */
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Input fields */
+.input {
+  width: 80%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+/* Buttons */
+.button {
+  width: 50%;
+  padding: 14px;
+  margin-top: 15px;
+  font-size: 1rem;
+  background-color: #f7971e;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  background-color: #ffd200;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 210, 0, 0.5);
+}
+
+/* Message for error/success */
+.message {
+  color: blue;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  min-height: 1.2em;
+}
+
+/* Subtext and links */
+.subtext {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.subtext a {
+  color: #f7971e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.subtext a:hover {
+  color: #ffd200;
+}
