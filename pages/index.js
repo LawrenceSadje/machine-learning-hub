@@ -1,9 +1,4 @@
-import { useState } from 'react'
-import { supabase } from '../lib/supabase'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
-import styles from '../styles/Home.module.css'
-
 
 export default function Landing() {
   const router = useRouter()
