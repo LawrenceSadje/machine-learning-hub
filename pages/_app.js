@@ -1,10 +1,5 @@
-import '../styles/Home.module.css';
-import '../styles/signup.module.css';
-import '../styles/login.module.css';
+import '../styles/dashboard.css' 
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
-
-
-

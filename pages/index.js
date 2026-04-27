@@ -1,18 +1,42 @@
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'  // import the CSS module
+import { useRouter } from 'next/router'
 
-export default function Home() {
+export default function Landing() {
+  const router = useRouter()
+
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <h1 className={styles.title}>Machine Learning Hub</h1>
-        <p className={styles.description}>
-          Explore machine learning concepts, build projects, and learn AI easily.
-        </p>
-        <Link href="/login">
-          <button className={styles.button}>Get Started</button>
-        </Link>
-      </div>
+    <div style={{
+      height: '100vh',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      background: 'linear-gradient(135deg, aquamarine, rgb(0,115,255))',
+      color: '#fff',
+      fontFamily: 'Segoe UI'
+    }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>
+        Welcome to ML Hub 🚀
+      </h1>
+
+      <p style={{ marginBottom: '30px' }}>
+        Build, Learn, and Explore
+      </p>
+
+      <button
+        onClick={() => router.push('/auth')}
+        style={{
+          padding: '15px 30px',
+          fontSize: '1rem',
+          borderRadius: '10px',
+          border: 'none',
+          background: '#fff',
+          color: '#0073ff',
+          cursor: 'pointer',
+          fontWeight: 'bold'
+        }}
+      >
+        Get Started
+      </button>
     </div>
   )
 }

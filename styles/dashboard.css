@@ -1,0 +1,136 @@
+/* BACKGROUND */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, aquamarine, rgb(0, 115, 255));
+  color: #111827;
+}
+
+/* MAIN LAYOUT */
+.dashboard-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+
+  
+}
+
+/* TOP HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* GRID LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* CARD STYLE */
+.card {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font-size: 14px;
+  background: white;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+/* BUTTONS */
+button {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 9px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* ARTICLE TITLE */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* META INFO */
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+/* COMMENT BOX */
+.comment {
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* REPLY */
+.reply {
+  margin-left: 18px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+/* SMALL ACTION */
+.small-btn {
+  background: none;
+  border: none;
+  color: #6366f1;
+  cursor: pointer;
+  font-size: 13px;
+}
+
